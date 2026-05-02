@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 
 function Register() {
-  const [user, setUser] = useState({
+  const [formData, setFormData] = useState({
     username: "",
     firstName: "",
     lastName: "",
@@ -9,19 +9,15 @@ function Register() {
     password: ""
   });
 
-  const handleChange = (e) => {
-    setUser({ ...user, [e.target.name]: e.target.value });
-  };
-
   return (
     <div>
       <h2>Sign Up</h2>
 
-      <input name="username" placeholder="Username" onChange={handleChange} />
-      <input name="firstName" placeholder="First Name" onChange={handleChange} />
-      <input name="lastName" placeholder="Last Name" onChange={handleChange} />
-      <input name="email" placeholder="Email" onChange={handleChange} />
-      <input type="password" name="password" placeholder="Password" onChange={handleChange} />
+      <input placeholder="Username" />
+      <input placeholder="First Name" />
+      <input placeholder="Last Name" />
+      <input placeholder="Email" />
+      <input type="password" placeholder="Password" />
 
       <button>Register</button>
     </div>
