@@ -13,13 +13,15 @@ function Register() {
     <div>
       <h2>Sign Up</h2>
 
-      <input placeholder="Username" />
-      <input placeholder="First Name" />
-      <input placeholder="Last Name" />
-      <input placeholder="Email" />
-      <input type="password" placeholder="Password" />
+      <form>
+        <input placeholder="Username" />
+        <input placeholder="First Name" />
+        <input placeholder="Last Name" />
+        <input placeholder="Email" />
+        <input type="password" placeholder="Password" />
 
-      <button>Register</button>
+        <button type="submit">Register</button>
+      </form>
     </div>
   );
 }
